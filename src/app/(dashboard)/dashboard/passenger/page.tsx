@@ -1,4 +1,4 @@
-// src/app/(dashboard)/passenger/page.tsx
+// src/app/(dashboard)/dashboard/passenger/page.tsx
 'use client'
 
 import { useAuth } from '@/providers/auth-provider'

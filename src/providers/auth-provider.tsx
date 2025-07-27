@@ -1,11 +1,11 @@
-// src/providers/auth-provider.tsx
+ 
 'use client'
 
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { apiClient } from '@/lib/api'
 import { getStoredUser, getStoredToken, clearAuthStorage, getDashboardRoute } from '@/lib/auth'
-import type { User, UserRole, AuthState, LoginRequest, RegisterRequest } from '@/types'
+import type { AuthState, LoginRequest, RegisterRequest } from '@/types'
 
 interface AuthContextType extends AuthState {
   login: (credentials: LoginRequest) => Promise<void>
